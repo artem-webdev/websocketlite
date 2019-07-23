@@ -90,7 +90,7 @@ class BaseThreadWebsocketHandlerClient(Thread, BaseHandlerMixin):
         try:
             self.connect.connect((self.host, self.port))
         except (BaseException,) as error:
-            print(error)
+            raise
 
     def request_handshake(self):
         self.request_key = self.protocol.make_key_request_handshake()

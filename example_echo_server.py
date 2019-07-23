@@ -8,7 +8,7 @@ class EchoWebSocketServer(ThreadWebsocketHandlerServer):
         print("WebSocket opened")
 
     def on_message(self, message):
-        print("WebSocket on_message")
+        print("WebSocket on message")
         self.write_message(message)
 
     def on_close(self):
