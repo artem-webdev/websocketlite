@@ -64,7 +64,6 @@ class ThreadWebsocketHandlerServer(Thread, BaseHandlerMixin):
 
 
 class BaseThreadWebsocketHandlerClient(Thread, BaseHandlerMixin):
-    threads_pool = []
 
     def __init__(self):
         super().__init__()
