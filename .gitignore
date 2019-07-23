@@ -1,0 +1,4 @@
+# ignore directories
+venv
+.idea/
+websocketlite/__pycache__/
