@@ -66,9 +66,6 @@ class Protocol:
         ]
         return "".join(headers).encode()
 
-    def request_handshake(self):
-        pass
-
     @property
     def get_mask_key(self):
         return random.randint(2147483648, 4294967295)
