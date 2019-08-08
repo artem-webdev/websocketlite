@@ -4,7 +4,7 @@ from websocketlite.handlers import ThreadWebsocketHandlerClient
 class WebsocketClient(ThreadWebsocketHandlerClient):
 
     def on_open(self):
-        print("websocket on_open!")
+        print("websocket on open!")
 
     def on_message(self, message):
         print("WebSocket on message")
