@@ -5,7 +5,6 @@ class WebsocketClient(ThreadWebsocketHandlerClient):
 
     def on_open(self):
         print("websocket on_open!")
-        self.write_message("Hello Web Socket!")
 
     def on_message(self, message):
         print("WebSocket on message")
