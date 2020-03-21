@@ -165,7 +165,7 @@ class Protocol:
         len_payload_header = 0
         if len_payload <= 125:
             len_payload_header = len_payload
-        elif len_payload > 125:
+        elif len_payload > 125 and len_payload <= 65535:
             len_payload_header = 126
         elif len_payload > 65535:
             len_payload_header = 127
