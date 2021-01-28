@@ -1,2 +1,4 @@
 # websocketlite
-реализация протокола websocket с нуля на нативных тредах
+implementation of the websocket protocol from scratch on native threads
+
+### 
